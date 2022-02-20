@@ -14,5 +14,8 @@
     "graphql"
   ],
   "author": "Georgii Galechyan",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
 }
