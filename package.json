@@ -4,7 +4,8 @@
   "description": "My attempt at project #1 (Node.js + Express.js + (Mongo or some SQL) + (RabbitMQ or Kafka) + (React + Redux) + GraphQL)",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node index",
+    "server": "nodemon index"
   },
   "keywords": [
     "node",
@@ -17,5 +18,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
