@@ -6,7 +6,11 @@ const express = require('express')
 const controller = require('../controller/game')
 const router = express.Router()
 
-// router.post('/login', controller.login) // функция-обрабочик маршрут. Сработает когда перейдём по адресу localhost:5000/api/auth/login
-// router.post('/register', controller.register)
+// функция-обрабочик маршрут. Сработает когда перейдём по адресу localhost:5000/api/...
+router.get('/', controller.getAllGames)
+router.post('/', controller.generateTicket)
+router.post('/', controller.startDrawSchedule)
+router.post('/', controller.startDrawNow)
+router.get('/:id', controller.checkTicket)
 
 module.exports = router
