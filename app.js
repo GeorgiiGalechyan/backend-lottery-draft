@@ -4,10 +4,16 @@
 // app.js экспортируется в index.js
 
 const express = require('express') // подключаем библиотеку express в константу express
+
 const authRoutes = require('./routes/auth') // регистрируем роуты (маршруты)
+const gameRoutes = require('./routes/game')
+const statisticsRoutes = require('./routes/statistics')
+
 const app = express()
 
 // app.use([path,] callback [, callback...]) , т.е. мы регистрирум маршрут (route): "путь" и "callback-функцию")
 app.use('/api/auth', authRoutes)
+app.use('/api/game', gameRoutes)
+app.use('/api/statistics', statisticsRoutes)
 
 module.exports = app
