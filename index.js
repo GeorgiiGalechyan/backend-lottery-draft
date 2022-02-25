@@ -9,7 +9,10 @@ const app = require('./app')
 require('dotenv').config() // модуль dotenv - позволяет создавать переменные среды в файле в формате .env
 // {path: path/filename'}
 
-const port = process.env.PORT || 6000
+// переменные из файла .env
+const port = process.env.PORT || 5000
 const host = process.env.HOST || localhostDefault
 
-app.listen(port, () => console.log(`Server is listening ${host}: ${port}`))
+app.listen(port, () =>
+  console.log(`Server is listening http://${host}:${port}`)
+)
