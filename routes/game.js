@@ -7,10 +7,10 @@ const controller = require('../controller/game')
 const router = express.Router()
 
 // функция-обрабочик маршрут. Сработает когда перейдём по адресу localhost:5000/api/...
-router.get('/', controller.getAllGames)
-router.post('/', controller.generateTicket)
-router.post('/', controller.startDrawSchedule)
-router.post('/', controller.startDrawNow)
-router.get('/:id', controller.checkTicket)
+router.get('/', controller.getAllGames) // показать все возможные игры
+router.post('/', controller.generateTicket) // сгенерировать билет
+router.post('/', controller.startDrawSchedule) // начать розыгрыша тиража (по расписанию)
+router.post('/', controller.startDrawNow) // принудительно начать розыгрыш тиража
+router.get('/:id', controller.checkTicket) // проверить билеты
 
 module.exports = router
