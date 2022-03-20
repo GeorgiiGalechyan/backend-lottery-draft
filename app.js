@@ -5,7 +5,8 @@
 
 const express = require('express') // подключаем библиотеку express в константу express
 
-const authRoutes = require('./routes/auth') // регистрируем роуты (маршруты)
+// регистрируем роуты (маршруты)
+const authRoutes = require('./routes/auth')
 const gameRoutes = require('./routes/game')
 const statisticsRoutes = require('./routes/statistics')
 
